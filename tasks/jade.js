@@ -126,6 +126,8 @@ module.exports = function(grunt) {
           output.push('});');
         }
 
+        output.push('');
+
         grunt.file.write(f.dest, output.join(grunt.util.normalizelf(options.separator)));
         grunt.verbose.writeln('File ' + chalk.cyan(f.dest) + ' created.');
       }
